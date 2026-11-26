@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "alejomonaco",
     "public": "client/build",
     "ignore": [
       "firebase.json",
