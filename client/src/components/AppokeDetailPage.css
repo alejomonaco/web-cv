@@ -1,0 +1,105 @@
+.appoke-page > .appoke-gallery,
+.appoke-page > .appoke-seeds,
+.appoke-page > .appoke-hero-section {
+  padding: clamp(1.4rem, 4vw, 3rem) 0 1rem;
+}
+
+.appoke-page .appoke-hero-grid {
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.appoke-page .appoke-hero-visual {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  align-self: start;
+  min-width: 0;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  padding: 0.65rem;
+  gap: 0.65rem;
+}
+
+.appoke-page .appoke-hero-visual > img {
+  display: block;
+  height: auto;
+  aspect-ratio: 3 / 2;
+}
+
+.appoke-page .appoke-hero-overlay {
+  position: static;
+  padding: 0.65rem 0.85rem;
+}
+
+.appoke-page .appoke-gallery h2,
+.appoke-page .appoke-seeds h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.65rem, 3vw, 2.6rem);
+  letter-spacing: -0.035em;
+}
+
+.appoke-page .appoke-seeds p {
+  max-width: 70ch;
+  margin: 0 0 1.15rem;
+}
+
+.appoke-page .appoke-shot-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.appoke-page .appoke-shot-card {
+  min-height: 0;
+  border-radius: 0.8rem;
+}
+
+.appoke-page .appoke-shot-card a,
+.appoke-page .appoke-seed-grid a {
+  display: block;
+}
+
+.appoke-page .appoke-shot-card img {
+  height: auto;
+  aspect-ratio: 1 / 2;
+  object-position: center;
+}
+
+.appoke-page .appoke-seed-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.appoke-page .appoke-seed-example {
+  min-width: 0;
+  margin: 0;
+  border-radius: 0.8rem;
+}
+
+.appoke-page .appoke-seed-example img {
+  aspect-ratio: 1 / 1.72;
+}
+
+.appoke-page .appoke-seed-example figcaption {
+  padding: 0.55rem 0.65rem;
+}
+
+@media (max-width: 950px) {
+  .appoke-page .appoke-seed-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+.appoke-page .appoke-shot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .appoke-page .appoke-shot-card {
+    min-width: 0;
+  }
+
+  .appoke-page .appoke-seed-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

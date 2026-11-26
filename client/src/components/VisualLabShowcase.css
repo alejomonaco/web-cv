@@ -1,0 +1,120 @@
+.visual-lab-showcase > .container {
+  border-top: 1px solid var(--surface-contrast);
+  padding-top: clamp(2rem, 5vw, 4rem);
+}
+
+.visual-lab-showcase-heading {
+  max-width: 44rem;
+  margin-bottom: 2rem;
+}
+
+.visual-lab-showcase-heading h2 {
+  margin: 0 0 0.6rem;
+  font-size: clamp(2rem, 4.5vw, 3.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.visual-lab-showcase-heading p,
+.visual-lab-module p,
+.visual-lab-output p {
+  line-height: 1.6;
+}
+
+.visual-lab-jump-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.2rem;
+  margin-top: 1.25rem;
+}
+
+.visual-lab-jump-links a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.visual-lab-module {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: clamp(1.25rem, 3vw, 2.75rem);
+  padding: clamp(1.1rem, 3.5vw, 2.6rem);
+  border: 1px solid var(--surface-contrast);
+  border-radius: 1.2rem;
+  background: var(--surface-strong);
+  scroll-margin-top: 7rem;
+}
+
+.visual-lab-module + .visual-lab-module {
+  margin-top: 1.1rem;
+}
+
+.visual-lab-module-copy h3 {
+  margin: 0 0 0.7rem;
+  font-size: clamp(1.65rem, 2.7vw, 2.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.visual-lab-features {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.visual-lab-figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.visual-lab-figure a {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #2f494b;
+  border-radius: 0.85rem;
+  background: #152326;
+  color: #b7f4e8;
+}
+
+.visual-lab-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.visual-lab-figure a > span {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.65rem 0.9rem;
+  border-top: 1px solid #2f494b;
+  font-size: 0.85rem;
+}
+
+.visual-lab-figure figcaption {
+  margin-top: 0.6rem;
+  color: var(--text);
+  font-size: 0.85rem;
+}
+
+.visual-lab-output {
+  margin-top: 1.3rem;
+  border-inline-start: 3px solid #32a794;
+  padding: 0.1rem 1rem;
+}
+
+.visual-lab-output h3,
+.visual-lab-output p {
+  margin: 0.3rem 0;
+}
+
+@media (max-width: 850px) {
+  .visual-lab-module {
+    grid-template-columns: 1fr;
+  }
+}
+
+.visual-lab-hero-link { display: inline-block; margin-top: 1rem; font-weight: 700; }
+#visual-lab-labs { scroll-margin-top: 5rem; }

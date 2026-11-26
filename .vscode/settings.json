@@ -1,0 +1,37 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "npm.cmd": true,
+        ".\\node_modules\\.bin\\tsc": true,
+        "&": true,
+        "Get-NetTCPConnection": true,
+        ".\\node_modules\\.bin\\ts-node-dev.cmd": true,
+        "Get-Item": true,
+        "Copy-Item": true,
+        "Test-Path": true,
+        "ForEach-Object": true,
+        "/^cd c:\\\\Users\\\\LENOVO\\\\web\\\\client; \\$code = @'\nconst fs = require\\(\"fs\"\\);\nconst parser = require\\(\"@babel/parser\"\\);\nconst lines = fs\\.readFileSync\\(\"src/content/portfolioContent\\.ts\", \"utf8\"\\)\\.split\\(/\\\\r\\?\\\\n/\\);\nfor \\(let i = 450; i <= 890; i \\+= 10\\) \\{\n  const src = lines\\.slice\\(0, i\\)\\.join\\(\"\\\\n\"\\) \\+ \"\\\\n\";\n  try \\{\n    parser\\.parse\\(src, \\{ sourceType: \"module\", plugins: \\[\"typescript\"\\] \\}\\);\n    console\\.log\\(\"ok\", i\\);\n  \\} catch \\(e\\) \\{\n    console\\.log\\(\"fail\", i, e\\.loc && e\\.loc\\.line, e\\.message\\);\n    break;\n  \\}\n\\}\n'@; node -e \\$code$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^cd c:\\\\Users\\\\LENOVO\\\\web\\\\client ; node tmp-snippet-parse\\.js$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^cd c:\\\\Users\\\\LENOVO\\\\web\\\\client ; node tmp-full-translation-parse\\.js$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^cd c:\\\\Users\\\\LENOVO\\\\web\\\\client ; node tmp-balance\\.js$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^cd c:\\\\Users\\\\LENOVO\\\\web\\\\client ; node tmp-es-parse\\.js$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^cd c:\\\\Users\\\\LENOVO\\\\web\\\\client; \\$code = @'\nconst fs = require\\('fs'\\);\nconst path = 'src/content/portfolioContent\\.ts';\nconst lines = fs\\.readFileSync\\(path, 'utf8'\\)\\.split\\(/\\\\r\\?\\\\n/\\);\nconst prefix = lines\\.slice\\(0, 29\\)\\.join\\('\\\\n'\\);\nconst esBody = lines\\.slice\\(31 - 1, 452\\)\\.join\\('\\\\n'\\);\nconst enBody = lines\\.slice\\(455 - 1, 868\\)\\.join\\('\\\\n'\\);\nconst caBody = lines\\.slice\\(871 - 1, 1294\\)\\.join\\('\\\\n'\\);\nconst rebuilt = \\[\n  prefix,\n  'export const translations: Record<Language, TranslationContent> = \\{',\n  '  es: \\{',\n  esBody,\n  '  \\},',\n  '  en: \\{',\n  enBody,\n  '  \\},',\n  '  ca: \\{',\n  caBody,\n  '  \\}',\n  '\\};',\n  ''\n\\]\\.join\\('\\\\n'\\);\nfs\\.writeFileSync\\(path, rebuilt, 'utf8'\\);\nconsole\\.log\\('rebuilt'\\);\n'@; node -e \\$code$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
