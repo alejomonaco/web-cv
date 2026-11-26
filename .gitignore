@@ -15,5 +15,7 @@ server/data/
 
 # Logs & OS
 *.log
+firebase-debug.log*
+.firebase/
 .DS_Store
 Thumbs.db
